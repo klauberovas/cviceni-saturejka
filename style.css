@@ -5,8 +5,8 @@ html {
 }
 
 *,
-:after,
-:before {
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -16,24 +16,99 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  padding: 20px 100px;
-  text-align: center;
+  margin: 0;
   background-color: #ffefef;
+  line-height: 1.5;
+  text-align: center;
+}
+
+header,
+section,
+footer {
+  padding: 20px 100px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
+  margin: 0;
 }
 
-.saturejka__logo-text {
+.saturejka__title-text {
+  font-size: 16px;
+}
+
+.saturejka--width {
   margin: 0 auto;
-  width: 350px;
+  max-width: 350px;
+}
+
+.saturejka__footer,
+.saturejka__main {
+  padding: 70px;
 }
 
 .saturejka__main {
   background-color: #ffff;
-  margin: 50px 0;
-  padding: 50px;
+  margin-top: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: inherit;
+}
+
+.saturejka__photo {
+  flex: 0 1 33%;
+}
+
+.photo {
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+}
+
+.flex__item {
+  flex: 50%;
+  text-align: left;
+}
+
+.flex--center {
+  align-self: center;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--basis {
+  flex: calc(50% - 30px);
+}
+
+.padding--top {
+  padding: 30px 0;
+}
+
+.saturejka__link {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ffefef;
+  padding: 10px;
+}
+
+.saturejka__footer {
+  font-size: 12px;
+  max-width: 850px;
 }
