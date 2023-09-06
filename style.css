@@ -1,11 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap&subset=latin-ext');
 
 html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+html {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px 100px;
+  text-align: center;
+  background-color: #ffefef;
 }
 
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
+}
+
+.saturejka__logo-text {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.saturejka__main {
+  background-color: #ffff;
+  margin: 50px 0;
+  padding: 50px;
 }
